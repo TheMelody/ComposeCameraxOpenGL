@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="camerax_cap_activity_bg">#000000</color>
+    <color name="camerax_cap_button_border_color">#66FFFFFF</color>
+    <color name="camerax_cap_button_bg_color">#FFFFFF</color>
+    <color name="camerax_cap_video_time_info_shape_color">#52C4C4C4</color>
+    <color name="camerax_cap_video_time_info_record_color">#FF4040</color>
+    <color name="camerax_cap_video_time_info_record_color2">#52C4C4C4</color>
+    <color name="camerax_cap_video_idl_circle_btn_bg_color">#52C4C4C4</color>
+    <color name="camerax_cap_video_recording_border_bg_color">#66FFFFFF</color>
+    <color name="camerax_cap_video_idl_border_bg_color">#66FFFFFF</color>
+    <color name="camerax_cap_video_recording_btn_bg_color">#FF4040</color>
+
+    <color name="camerax_button_submit_text_color">#FFFFFF</color>
+    <color name="camerax_button_submit_background_color">#394668</color>
+    <color name="camerax_dialog_window_background">#FFFFFF</color>
+    <color name="camerax_dialog_positive_button_text_color">#FFFFFF</color>
+    <color name="camerax_dialog_negative_button_text_color">#394668</color>
+    <color name="camerax_dialog_content_text_color">#333333</color>
+    <color name="camerax_dialog_positive_button_bg_color">#394668</color>
+    <color name="camerax_dialog_negative_button_bg_color">#F0F2F5</color>
+</resources>

@@ -9,5 +9,6 @@
 **小专栏**：https://xiaozhuanlan.com/u/halifax<br/>
 
 ## 效果图
+|![camerax_video_screen_shot.gif](screen_shot/camerax_video_screen_shot.gif)
 
 

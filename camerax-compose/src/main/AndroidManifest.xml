@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.melody.camerax_compose">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application>
+        <activity android:name=".ui.CameraXActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/CameraRecordTheme"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity android:name=".ui.PreviewImgAndVideoActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+    </application>
+</manifest>

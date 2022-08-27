@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camerax_video_options_delete">删除</string>
+    <string name="camerax_video_options_complete">拍摄完成</string>
+    <string name="camerax_take_photo_error_toast">相机拍照失败!</string>
+
+    <string name="camerax_dialog_ok">确定</string>
+    <string name="camerax_dialog_cancel">取消</string>
+    <string name="camerax_record_delete_file_confirm_msg">确认删除当前视频吗?</string>
+    <string name="camerax_record_video_no_publish_confirm_msg">视频尚未发布，是否确认退出?</string>
+    <string name="camerax_record_video_recording_stop_confirm_msg">视频正在录制中，是否确认停止拍摄?</string>
+    <string name="camerax_record_video_no_publish_restart_confirm_msg">视频尚未发布，是否重新录制一段新的视频?</string>
+    <string name="camerax_record_menu_options_reserve">反转</string>
+
+</resources>

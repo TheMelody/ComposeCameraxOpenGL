@@ -1,0 +1,32 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        maven {
+            url 'https://maven.aliyun.com/repository/public/'
+        }
+        maven {
+            url 'https://mirrors.tencent.com/nexus/repository/maven-public/'
+        }
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven {
+            url 'https://maven.aliyun.com/repository/public/'
+        }
+        maven {
+            url 'https://mirrors.tencent.com/nexus/repository/maven-public/'
+        }
+        mavenCentral()
+    }
+}
+rootProject.name = "ComposeCamerax"
+includeBuild("versionplugin")
+include ':app'
+include ':ui-camerax'
+include ':ui-GLCamerax'
+include ':camerax-compose'

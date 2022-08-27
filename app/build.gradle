@@ -1,0 +1,75 @@
+import com.melody.versionplugin.BuildVersion
+import com.melody.versionplugin.Dependencies
+
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.melody.versionplugin'
+}
+android {
+    compileSdk BuildVersion.compileSdkVersion
+
+    defaultConfig {
+        minSdk BuildVersion.minSdkVersion
+        targetSdk BuildVersion.targetSdkVersion
+        versionCode BuildVersion.versionCode
+        versionName BuildVersion.versionName
+        multiDexEnabled true
+        resConfigs "zh"
+        ndk {
+            abiFilters 'armeabi' ,'armeabi-v7a', 'arm64-v8a' ,"x86"
+        }
+        vectorDrawables {
+            useSupportLibrary true
+        }
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        compose true
+
+        // Disable unused AGP features
+        buildConfig false
+        aidl false
+        renderScript false
+        shaders false
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion Dependencies.compose_version
+        kotlinCompilerVersion BuildVersion.kotlinCompilerVersion
+    }
+    packagingOptions {
+        resources {
+            excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+    kotlinOptions {
+        jvmTarget = BuildVersion.jvmTarget
+    }
+    lint {
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    implementation Dependencies.multidex
+    implementation Dependencies.compose_ui
+    implementation Dependencies.activity_compose
+    implementation Dependencies.compose_material
+    api project(path: ':camerax-compose')
+
+    debugImplementation Dependencies.compose_ui_tooling
+}
