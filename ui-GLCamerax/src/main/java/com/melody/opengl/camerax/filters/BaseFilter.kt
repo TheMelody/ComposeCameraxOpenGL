@@ -177,8 +177,7 @@ abstract class BaseFilter(var res: Resources) {
     protected abstract fun onSizeChanged(width: Int, height: Int)
 
     companion object {
-        //============================================Getting And Setting
-        const val tAG = "BaseFilter"
+        const val TAG = "BaseFilter"
 
         /**
          * 单位矩阵
@@ -243,7 +242,7 @@ abstract class BaseFilter(var res: Resources) {
 
         fun glError(code: Int, index: Any) {
             if (code != 0) {
-                Log.e(tAG, "glError:$code---$index")
+                Log.e(TAG, "glError:$code---$index")
             }
         }
     }
